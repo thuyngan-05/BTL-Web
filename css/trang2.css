@@ -6,13 +6,17 @@
 .flex{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
 }
 
 header{
     background-color: rgb(210, 87, 210);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 .menu>li>a{
@@ -23,6 +27,10 @@ header{
 .menu>li>a:hover{
     background: rgb(236, 172, 236);
     color: white;
+}
+
+.menu{
+    justify-content: space-between;
 }
 
 header .find{
@@ -57,15 +65,21 @@ header h1{
 .left{
     margin-top: 5px;
     background-color: rgb(210, 87, 210);
-    width: 30%;
+    width: 29.5%;
     text-align: center;
     border-radius: 10px;
     position: fixed;
-    border-right: 5px solid white;
-    /* height: 100%; */
+    /* position: sticky;
+    left: 0;
+    top: 54px; */
+    /* border-right: 5px solid white; */
+    height: 100%;
 }
 
 .left>ul>li{
+    align-items: center;
+    justify-content: center;
+    display: flex;
     padding: 5px;
     list-style-type: none;
 }
@@ -79,7 +93,7 @@ header h1{
     background-color: rgb(236, 172, 236);
     color: white;
     /* padding: 5px; */
-    display: block;
+    /* display: block; */
 }
 
 .left ul{
@@ -94,12 +108,24 @@ header h1{
     margin-top: 5px;
     background-color: rgb(236, 172, 236);
     width: 70%;
-    float: right;
+    margin-left: auto;
+    /* float: right; */
+}
+
+.flex-1{
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.flex-1>h1{
+    display: flex;
+    align-items: center;
 }
 
 .right .next{
     margin-right: 10px;
 }
+
 
 .album{
     width: 20%;
@@ -125,15 +151,38 @@ header h1{
     margin-top: 5px;
 }
 
-.right h1{
+/* .right h1{
     margin-left: 1rem;
     margin-top: 2rem;
+} */
+
+.flex-1{
+    padding-top: 2rem;
+    padding-bottom: 5px;
+    padding-left: 1.5rem;
 }
 
 
 footer{
-    /* top: 100%; */
-    background-color: aqua;
-    margin-top: 5px;
-    border-radius: 10px;
+    z-index: 2;
+    background-color: rgb(210, 87, 210);
+    /* margin-top: 5px; */
+    border-top: 5px solid white;
+    /* border-radius: 10px; */
+    position: sticky;
+    height: 120px;
+    bottom: 0;
+    display: flex;
+}
+
+footer img{
+    height: 80px;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+footer i{
+    width: 20px;
+    height: 20px;
+    color: red;
 }
