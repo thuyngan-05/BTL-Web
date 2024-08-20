@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header{
+    background-color: rgb(210, 87, 210);
+}
+
+.menu>li>a{
+    padding: 1rem;
+    display: block;
+}
+
+.menu>li>a:hover{
+    background: rgb(236, 172, 236);
+    color: white;
+}
+
+header .find{
+    /* background-color: aqua; */
+    width: 70%;
+    /* text-align: center; */
+}
+
+.find{
+    text-align: center;
+    justify-content: center;
+}
+
+header h1{
+    color: powderblue;
+    animation: 3s name infinite;
+    padding-left: 1rem;
+    text-shadow: 4px 3px coral;
+    font-size: 250%;
+}
+
+@keyframes name{
+    from{
+        color: powderblue;
+    }
+    to{
+        color: rgb(9, 83, 105);
+    }
+}
+
+/* LEFT  */
+.left{
+    margin-top: 5px;
+    background-color: rgb(210, 87, 210);
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    position: fixed;
+    border-right: 5px solid white;
+    /* height: 100%; */
+}
+
+.left>ul>li{
+    padding: 5px;
+    list-style-type: none;
+}
+
+.left>ul>li>a{
+    text-decoration: none;
+    padding: 5px;
+}
+
+.left>ul>li:hover{
+    background-color: rgb(236, 172, 236);
+    color: white;
+    /* padding: 5px; */
+    display: block;
+}
+
+.left ul{
+    border-bottom: 2px solid white;
+    border-radius: 10px;
+}
+
+
+/* ALBUM */
+.right{
+    /* margin-left: 1rem; */
+    margin-top: 5px;
+    background-color: rgb(236, 172, 236);
+    width: 70%;
+    float: right;
+}
+
+.right .next{
+    margin-right: 10px;
+}
+
+.album{
+    width: 20%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.album img{
+    width: 100%;
+}
+
+.album>div{
+    background: linear-gradient(white, black);
+    padding: 5px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-left: 10px;
+}
+
+.right>h1:first-child{
+    margin-top: 5px;
+}
+
+.right h1{
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+
+
+footer{
+    /* top: 100%; */
+    background-color: aqua;
+    margin-top: 5px;
+    border-radius: 10px;
+}
