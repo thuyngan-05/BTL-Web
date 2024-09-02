@@ -179,17 +179,17 @@ header h1{
 }
 
 
-.album{
+.album, .singer, .hot-trend{
     width: 20%;
     padding: 5px;
     box-sizing: border-box;
 }
 
-.album img{
+.album img, .singer img, .hot-trend img{
     width: 100%;
 }
 
-.album>div{
+.album>div, .singer>div, .hot-trend>div{
     background: linear-gradient(white, black);
     padding: 5px;
     border-radius: 10px;

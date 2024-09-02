@@ -63,7 +63,7 @@ h2{
 }
 
 .button:hover{
-    background-color: lightseagreen;
+    color: lightseagreen;
     border-radius: 50%;
 }
 
