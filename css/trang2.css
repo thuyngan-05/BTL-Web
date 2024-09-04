@@ -46,6 +46,20 @@ header .find{
     justify-content: center;
 }
 
+.find input{
+    width: 50%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
+.find button{
+    width: 5%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px black;
+}
+
 header h1{
     color: powderblue;
     animation: 3s name infinite;
@@ -179,17 +193,17 @@ header h1{
 }
 
 
-.album{
+.album, .singer, .hot-trend{
     width: 20%;
     padding: 5px;
     box-sizing: border-box;
 }
 
-.album img{
+.album img, .singer img, .hot-trend img{
     width: 100%;
 }
 
-.album>div{
+.album>div, .singer>div, .hot-trend>div{
     background: linear-gradient(white, black);
     padding: 5px;
     border-radius: 10px;
