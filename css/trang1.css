@@ -4,7 +4,7 @@
 
 body{
     /* background: linear-gradient(white, rgb(210,87,210)); */
-    /* background-image: url(/img/bg.jpg); */
+    background-image: url(/img/bg.jpg);
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -12,7 +12,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-
 
 h2{
     text-align: center;
@@ -64,8 +63,8 @@ h2{
 }
 
 .button:hover{
-    background-color: lightseagreen;
-    border-radius: 30%;
+    color: lightseagreen;
+    border-radius: 50%;
 }
 
 .sign-up>a:hover{
