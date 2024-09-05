@@ -248,6 +248,13 @@ footer{
     padding: 20px;
 }
 
+.music-audio{
+    box-sizing: border-box;
+    width: 1000px;
+    align-self: center;
+    margin-left: 15px;
+}
+
 .icon i{
     width: 100px;
     height: 100px;
