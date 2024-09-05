@@ -240,12 +240,38 @@ footer{
     height: 120px;
     bottom: 0;
     display: flex;
+    justify-content: center;
+}
+
+footer>div{
+    
 }
 
 .music img{
-    height: 80px;
+    /* margin-left: 25px; */
+    height: 100px;
     border-radius: 50%;
-    padding: 20px;
+    /* padding: 20px; */
+    animation: imgfoot 5s infinite linear;
+    box-shadow: 0 0 10px 5px rgba(0, 255, 255, 0.5); 
+    /* Ánh sáng mặc định */
+    transition: box-shadow 0.5s ease; /*Hiệu ứng mượt mà*/
+}
+
+.music>div{
+    margin-left: 30px;
+    margin-right: 20px;
+}
+
+@keyframes imgfoot {
+    from{
+        transform: rotate(0deg);
+        box-shadow: 0 0 30px 30px rgba(0, 255, 255, 0.5);
+    }
+    to{
+        transform: rotate(360deg);
+        box-shadow: 0 0 20px 20px rgba(0, 255, 255, 1);
+    }
 }
 
 .music-audio{
@@ -254,6 +280,11 @@ footer{
     align-self: center;
     margin-left: 15px;
 }
+
+/* audio{
+    color: aquamarine;
+} */
+
 
 .icon i{
     width: 100px;
