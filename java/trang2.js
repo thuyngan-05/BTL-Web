@@ -59,3 +59,35 @@ window.onload = function() {
                 p.parentElement.style.border = "2px solid red";
     }
 }*/
+
+window.onload = function() {
+    let searchInput = document.querySelector("input[type=text]");
+    let searchButton = document.querySelector("button");
+    
+    searchButton.onclick = function() {
+        // Xóa border cũ
+        let items = document.querySelectorAll(".singer, .album, .hot-trend");
+        for (let item of items) {
+            item.style.border = "";
+        }
+
+        // Lấy giá trị tìm kiếm
+        let searchValue = searchInput.value.toLowerCase();
+
+        // Tìm kiếm trong tên singer, album, hot trend
+        let found = false;
+        let allItems = document.querySelectorAll(".singer p, .album p, .hot-trend p");
+
+        for (let item of allItems) {
+            if (item.innerText.toLowerCase().includes(searchValue)) {
+                found = true;
+                item.parentElement.parentElement.style.border = "2px solid red";  // Bật border cho item tìm thấy
+            }
+        }
+
+        // Nếu không tìm thấy
+        if (!found) {
+            alert("Không tìm thấy");
+        }
+    }
+}
