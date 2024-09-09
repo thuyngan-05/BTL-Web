@@ -329,7 +329,7 @@ i.fa-volume-high:hover{
     transform: scale(1.1);
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     *{
         font-size: 2vw;
     }
@@ -381,4 +381,4 @@ i.fa-volume-high:hover{
     .item-center>.fa-circle-play{
         left: 50%;
     }
-}
+} */
