@@ -293,3 +293,70 @@ footer>div{
     /* align-items: center; */
     /* justify-items: space-between; */
 }
+
+@media screen and (max-width: 800px) {
+    *{
+        font-size: 2vw;
+    }
+    .album, .singer, .hot-trend{
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .find{
+        display: none;
+    }
+
+    .user{
+        display: none;
+    }
+
+    .song{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .song>img{
+        display: none;
+    }
+
+    .left{
+        height: 70vh;
+        overflow: auto;
+    }
+
+   
+    .song{
+        position: relative;
+    }
+    .song>h3:first-child{
+        display: none;
+    }
+
+    .song div{
+        margin-left: 15%;
+    }
+
+    .song i{
+        font-size: 3vw;
+        position: absolute;
+        top: 25%;
+        left: 0;
+    }
+
+    footer{
+        height: 18vh;
+    }
+
+    .music>div{
+        width: 100vw;
+        display: flex;
+        position: absolute;
+        bottom: 2%;
+        left: 20%;
+    }
+    .music h3{
+        padding-right: 30px;
+    }
+}

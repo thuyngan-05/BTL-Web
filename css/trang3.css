@@ -328,3 +328,57 @@ i.fa-volume-high:hover{
 .introduction h2:hover, .introduction p:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 800px) {
+    *{
+        font-size: 2vw;
+    }
+    .album, .singer, .hot-trend{
+        width: 50%;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+
+    .find{
+        display: none;
+    }
+
+    .album.flex{
+        display: block !important;
+    }
+
+    .album.flex div{
+        width: 100%;
+    }
+
+    .song{
+        position: relative;
+    }
+
+   
+    .fa-repeat{
+        position: absolute;
+        left: 50%;
+    }
+
+    .fa-circle-play{
+        position: absolute;
+        left: 70%;
+    }
+    .fa-forward-fast{
+        position: absolute;
+        left: 75%;
+    }
+    .fa-backward-fast{
+        position: absolute;
+        left: 65%;
+    }
+    .fa-arrow-rotate-right{
+        position: absolute;
+        left: 80%;
+    }
+
+    .item-center>.fa-circle-play{
+        left: 50%;
+    }
+}
