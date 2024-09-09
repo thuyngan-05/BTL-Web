@@ -122,8 +122,17 @@ header h1{
 
 /* Chỉnh mục yêu thích va thư viện*/
 .left .love{
+    
+    gap: 10px;
+    flex-direction: column;
+    display: flex;
+
     width: 100%;
 }
+
+
+
+
 
 .left .love img{
     width: 15%;
@@ -149,13 +158,37 @@ header h1{
     color: saddlebrown;
 }
 
+
+
 .left .song{
     align-items: center;
     display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease;
+
     margin: 10px 10px 5px 10px;
     /* justify-content: space-between; */
     border-bottom: 1px solid rgba(135, 128, 128, 0.473);
+
+
+    padding-right: 10px; /* Đảm bảo khoảng cách cho thanh cuộn */
 }
+
+.love { 
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    max-height: 480px;  /* Giới hạn chiều cao, có thể điều chỉnh tùy theo ý muốn */
+    overflow-y: auto;   /* Thêm thanh cuộn khi nội dung vượt quá chiều cao */
+    padding-right: 10px; /* Dành khoảng trống cho thanh cuộn */
+    box-sizing: border-box;
+ }
+
+
+
+
+
 
 .love .song:hover{
     background-color: rgba(255, 255, 255, 0.408);
@@ -230,6 +263,17 @@ header h1{
     padding-bottom: 5px;
     padding-left: 1.5rem;
 }
+
+
+
+.album:hover, .singer:hover, .hot-trend:hover {
+    background-color: rgba(184, 145, 73, 0.7); /* Màu nền khi hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Hiệu ứng đổ bóng */
+    transform: scale(1.1); /* Tăng kích thước nhẹ khi hover */
+    transition: 0.3s ease-in-out; /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+
 
 
 footer{
