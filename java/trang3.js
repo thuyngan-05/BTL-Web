@@ -29,7 +29,7 @@ let trangChu = document.querySelectorAll('a[href="#trangchu"]');
 
 for (let link of trangChu) {
     link.onclick = function() {
-        window.open("/html/trang2.html", "_blank");
+        window.open("/trang2.html", "_blank");
     }
 }
 
