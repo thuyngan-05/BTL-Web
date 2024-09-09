@@ -1,4 +1,4 @@
-document.querySelector('.button').addEventListener('click', function () {
+/*document.querySelector('.button').addEventListener('click', function () {
     const username = document.querySelector('.user input').value;
     const password = document.querySelector('.password input').value;
 
@@ -10,8 +10,8 @@ document.querySelector('.button').addEventListener('click', function () {
     } else {
         alert("Vui lòng nhập đầy đủ username và password.");
     }
-});
-/*
+});*/
+
 // // Bắt sự kiện click chuột trên nút button
 window.onload = function() {
     let button = document.getElementById("button");
@@ -21,10 +21,10 @@ window.onload = function() {
         let password = document.getElementById("password").value;
 
         if(username && password){
-            window.open("/html/trang2.html", "_blank");
+            window.open("/trang2.html", "_blank");
         }
         else{
             alert("Vui lòng nhập đầy đủ username và password.");
         }
     }
-}*/
+}
