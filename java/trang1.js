@@ -21,7 +21,7 @@ window.onload = function() {
         let password = document.getElementById("password").value;
 
         if(username && password){
-            window.open("/trang2.html", "_blank");
+            window.open("trang2.html", "_blank");
         }
         else{
             alert("Vui lòng nhập đầy đủ username và password.");
