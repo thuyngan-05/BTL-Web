@@ -7,7 +7,7 @@ window.onload = function() {
     for(let album of albumImages) {
         album.onclick = function() {
             let albumName = this.classList[1];
-            window.open(`trang3.html?album=${albumName}`, '_blank');        
+            window.open(`/trang3.html?album=${albumName}`, '_blank');        
         }
     }
 
@@ -32,7 +32,7 @@ window.onload = function() {
                 p.parentElement.style.border = "2px solid red";
     }
 }*/
-
+/*
 window.onload = function() {
 
     let main = document.getElementById("main");
@@ -58,4 +58,4 @@ window.onload = function() {
             if (p.innerText.includes(txt) === true)
                 p.parentElement.style.border = "2px solid red";
     }
-}
+}*/
