@@ -210,12 +210,15 @@ header h1{
     position: relative;
     text-align: center;
     color: white;
-    margin-left: 10px;
+    margin: 5px;
 }
 
 .right>h1:first-child{
     margin-top: 5px;
 }
+
+/* Hiệu ứng phát sáng cho hình ảnh khi rê chuột */
+
 
 /* .right h1{
     margin-left: 1rem;

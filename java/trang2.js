@@ -75,18 +75,18 @@ window.onload = function() {
         let searchValue = searchInput.value.toLowerCase();
 
         // Tìm kiếm trong tên singer, album, hot trend
-        let found = false;
+        let timkiem = false;
         let allItems = document.querySelectorAll(".singer p, .album p, .hot-trend p");
 
         for (let item of allItems) {
             if (item.innerText.toLowerCase().includes(searchValue)) {
-                found = true;
-                item.parentElement.parentElement.style.border = "2px solid red";  // Bật border cho item tìm thấy
+                timkiem = true;
+                item.parentElement.parentElement.style.border = "4px solid red";  // Bật border cho item tìm thấy
             }
         }
 
         // Nếu không tìm thấy
-        if (!found) {
+        if (!timkiem) {
             alert("Không tìm thấy");
         }
     }
