@@ -7,7 +7,7 @@ window.onload = function() {
     for(let album of albumImages) {
         album.onclick = function() {
             let albumName = this.classList[1];
-            window.open(`trang3.html?album=${albumName}`, '_blank');        
+            window.open(`/trang3.html?album=${albumName}`, '_blank');        
         }
     }
 }
