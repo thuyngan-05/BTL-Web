@@ -66,11 +66,11 @@ window.onload = function() {
         librarySongs.style.display = "block";
     }
 
-    // Gán sự kiện click cho biểu tượng heart và chữ "Yêu thích"
+    // Click cho biểu tượng heart và chữ "Yêu thích"
     heartIcon.onclick = showLoveList;
     heartText.onclick = showLoveList;
 
-    // Gán sự kiện click cho biểu tượng list và chữ "Thư viện"
+    // Click cho biểu tượng list và chữ "Thư viện"
     listIcon.onclick = showLibraryList;
     listText.onclick = showLibraryList;
 
